@@ -1,0 +1,28 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: lightgray;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progress {
+  background-color: green;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.feedback {
+  color: blue;
+  font-weight: bold;
+  margin: 10px 0;
+}
