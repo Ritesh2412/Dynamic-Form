@@ -1,0 +1,123 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  padding: 30px;
+  background: linear-gradient(145deg, #b6efe6, #598282);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.App:hover {
+  transform: scale(1);
+}
+
+.error {
+  color: #f03a3a;
+  font-size: 1.1em;
+  background: #ffe4e4;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 16px;
+  background: #e0e7ff;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.progress {
+  background: linear-gradient(to right, #34d399, #10b981);
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+  transition: width 0.6s ease;
+}
+
+.feedback {
+  color: #4b5563;
+  font-weight: 700;
+  font-family: 'Lora', serif;
+  margin: 20px 0;
+  font-style: italic;
+  background: #f1f5f9;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #2d3748;
+  background: #3881d4;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.text-box:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 184, 248, 0.2);
+}
+
+.text-box::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+    font-size: 0.95em;
+  }
+
+  .error {
+    font-size: 1.1em;
+    padding: 8px 14px;
+  }
+
+  .progress-bar {
+    height: 14px;
+  }
+
+  .feedback {
+    margin: 15px 0;
+    padding: 10px 16px;
+  }
+
+  .text-box {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+    font-size: 0.85em;
+  }
+
+  .error {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  .feedback {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .text-box {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+}
